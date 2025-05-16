@@ -6,3 +6,9 @@ export interface Point3D {
 }
 
 export type RenderMode = 'points' | 'lines' | 'vectors';
+
+export interface AxisLabels {
+  x: string;
+  y: string;
+  z: string;
+}
