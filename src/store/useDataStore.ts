@@ -5,11 +5,15 @@ interface DataState {
   points: Point3D[];
   renderMode: RenderMode;
   axisLabels: AxisLabels;
+  grabMode: boolean;
+  moveMode: boolean;
   addPoint: (point: Omit<Point3D, 'id'>) => void;
   updatePoint: (id: string, point: Partial<Omit<Point3D, 'id'>>) => void;
   removePoint: (id: string) => void;
   setRenderMode: (mode: RenderMode) => void;
   setAxisLabels: (labels: Partial<AxisLabels>) => void;
+  setGrabMode: (enabled: boolean) => void;
+  setMoveMode: (enabled: boolean) => void;
   clearPoints: () => void;
   setPointsFromText: (text: string) => void;
 }
@@ -22,6 +26,8 @@ const useDataStore = create<DataState>((set) => ({
     y: 'Y',
     z: 'Z'
   },
+  grabMode: true,
+  moveMode: false,
 
   addPoint: (point) => set((state) => ({
     points: [...state.points, { ...point, id: crypto.randomUUID() }]
@@ -41,6 +47,16 @@ const useDataStore = create<DataState>((set) => ({
 
   setAxisLabels: (labels) => set((state) => ({
     axisLabels: { ...state.axisLabels, ...labels }
+  })),
+
+  setGrabMode: (enabled) => set((state) => ({ 
+    grabMode: enabled,
+    moveMode: enabled ? false : state.moveMode // Disable move mode when enabling grab mode
+  })),
+
+  setMoveMode: (enabled) => set((state) => ({ 
+    moveMode: enabled,
+    grabMode: enabled ? false : state.grabMode // Disable grab mode when enabling move mode
   })),
 
   clearPoints: () => set({ points: [] }),

@@ -7,19 +7,19 @@ import Toolbar from './components/Toolbar';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-gray-800 to-black flex flex-col">
       <motion.header
         className="bg-black bg-opacity-50 text-white p-4"
-        initial={{ y: -50 }}
+        initial={{ y: -100 }}
         animate={{ y: 0 }}
-        transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+        transition={{ type: 'spring', stiffness: 300, damping: 100 }}
       >
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Activity className="stroke-current" size={24} />
-            <h1 className="text-xl font-bold">Grid-ify</h1>
+            <h1 className="text-2xl font-bold">Grid-ify</h1>
           </div>
-          <p className="text-gray-400">3D Data visualization</p>
+          <p className="text-gray-400">Aaroophan's Interactive Data Visualizer</p>
         </div>
       </motion.header>
 

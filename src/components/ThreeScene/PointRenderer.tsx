@@ -10,13 +10,13 @@ const PointRenderer: React.FC<PointRendererProps> = ({ points }) => {
     <>
       {points.map((point) => (
         <mesh key={point.id} position={[point.x, point.y, point.z]}>
-          <sphereGeometry args={[0.2, 16, 16]} />
+          <sphereGeometry args={[0.1, 10, 10]} />
           <meshStandardMaterial 
-            color="#6366f1" 
-            emissive="#4f46e5"
-            emissiveIntensity={0.2}
-            roughness={0.3}
-            metalness={0.7}
+            color="#002fff" 
+            emissive="#002fff"
+            emissiveIntensity={1}
+            roughness={1}
+            metalness={1}
           />
         </mesh>
       ))}

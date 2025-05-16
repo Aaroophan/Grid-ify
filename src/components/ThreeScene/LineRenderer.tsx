@@ -29,8 +29,8 @@ const LineRenderer: React.FC<LineRendererProps> = ({ points }) => {
       <line geometry={linePositions}>
         <lineBasicMaterial 
           attach="material" 
-          color="#6366f1" 
-          linewidth={2} 
+          color="#d6ddff" 
+          linewidth={5} 
           linecap="round" 
           linejoin="round"
         />
@@ -39,8 +39,8 @@ const LineRenderer: React.FC<LineRendererProps> = ({ points }) => {
       {/* Render points as small spheres */}
       {points.map((point) => (
         <mesh key={point.id} position={[point.x, point.y, point.z]}>
-          <sphereGeometry args={[0.1, 16, 16]} />
-          <meshStandardMaterial color="#f97316" emissive="#f97316" emissiveIntensity={0.3} />
+          <sphereGeometry args={[0.1, 20, 20]} />
+          <meshStandardMaterial color="#ff0000" emissive="#ff0000" emissiveIntensity={0.3} />
         </mesh>
       ))}
     </>

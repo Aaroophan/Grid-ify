@@ -52,18 +52,15 @@ const VectorRenderer: React.FC<VectorRendererProps> = ({ points }) => {
             <line geometry={lineGeometry}>
               <lineBasicMaterial 
                 attach="material" 
-                color="#14b8a6" 
-                linewidth={2}
+                color="#04ff00" 
+                linewidth={5}
               />
             </line>
             
-            {/* Arrow head at the end of the vector */}
-            {createArrowHead(start, end, '#14b8a6')}
-            
             {/* Small sphere at the point */}
             <mesh position={[point.x, point.y, point.z]}>
-              <sphereGeometry args={[0.1, 16, 16]} />
-              <meshStandardMaterial color="#14b8a6" />
+              <sphereGeometry args={[0.05, 5, 5]} />
+              <meshStandardMaterial color="#04ff00" />
             </mesh>
           </React.Fragment>
         );

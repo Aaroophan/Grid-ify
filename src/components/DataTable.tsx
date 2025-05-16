@@ -19,9 +19,9 @@ const DataTable: React.FC = () => {
   return (
     <motion.div
       className="bg-gradient-to-br from-gray-900 to-gray-800 shadow-lg rounded-lg overflow-hidden h-full"
-      initial={{ opacity: 0, x: -20 }}
+      initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.2 }}
+      transition={{ duration: 0.5 }}
     >
       <div className="p-4 bg-black bg-opacity-50 text-white">
         <h2 className="text-xl font-semibold mb-4">Coordinates</h2>

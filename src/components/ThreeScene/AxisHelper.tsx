@@ -15,13 +15,13 @@ const AxisHelper: React.FC = () => {
     const size = 100;
     const divisions = 100;
 
-    const gridXY = new THREE.GridHelper(size, divisions, 0x4e598a, 0x2d324a);
+    const gridXY = new THREE.GridHelper(size, divisions, 0x4e598a, 0x242a40);
     gridXY.rotation.x = Math.PI / 2;
     gridXY.position.z = 0;
 
-    const gridXZ = new THREE.GridHelper(size, divisions, 0x4e598a, 0x2d324a);
+    const gridXZ = new THREE.GridHelper(size, divisions, 0x4e598a, 0x242a40);
 
-    const gridYZ = new THREE.GridHelper(size, divisions, 0x4e598a, 0x2d324a);
+    const gridYZ = new THREE.GridHelper(size, divisions, 0x4e598a, 0x242a40);
     gridYZ.rotation.z = Math.PI / 2;
     gridYZ.position.x = 0;
 
@@ -35,7 +35,7 @@ const AxisHelper: React.FC = () => {
     };
   }, [scene]);
 
-  const numbers = Array.from({ length: 11 }, (_, i) => i - 5);
+  const numbers = Array.from({ length: 101 }, (_, i) => i - 50);
 
   return (
     <>
