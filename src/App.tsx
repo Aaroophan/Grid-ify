@@ -7,9 +7,9 @@ import Toolbar from './components/Toolbar';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col">
-      <motion.header 
-        className="bg-indigo-600 text-white p-4 shadow-md"
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black flex flex-col">
+      <motion.header
+        className="bg-black bg-opacity-50 text-white p-4"
         initial={{ y: -50 }}
         animate={{ y: 0 }}
         transition={{ type: 'spring', stiffness: 300, damping: 30 }}
@@ -19,12 +19,12 @@ function App() {
             <Activity className="stroke-current" size={24} />
             <h1 className="text-xl font-bold">Grid-ify</h1>
           </div>
-          <p className="text-indigo-100">3D Data visualization</p>
+          <p className="text-gray-400">3D Data visualization</p>
         </div>
       </motion.header>
-      
+
       <main className="flex-grow p-4 md:p-6 container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 h-[calc(100vh-12rem)]">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 h-[calc(100vh-14rem)]">
           <div className="lg:col-span-2 h-full">
             <DataTable />
           </div>
@@ -33,7 +33,7 @@ function App() {
           </div>
         </div>
       </main>
-      
+
       <Toolbar />
       
 
