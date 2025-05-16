@@ -71,9 +71,9 @@ const DataTable: React.FC = () => {
       <div className="p-4">
         <div className="text-gray-400">
           <h3 className="font-semibold mb-2">Current Points:</h3>
-          <pre className="bg-gray-800 p-3 rounded overflow-x-auto">
+          <pre className="text-xs bg-gray-800 p-3 rounded overflow-x-auto">
             {points.length > 0
-              ? points.map(p => `[${p.x},${p.y},${p.z}]`).join(',\n')
+              ? points.map(p => `[${p.x},${p.y},${p.z}]`).join(',')
               : 'No points added yet'
             }
           </pre>

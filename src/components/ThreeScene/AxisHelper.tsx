@@ -68,13 +68,13 @@ const AxisHelper: React.FC = () => {
 
       {numbers.map((num) => (
         <React.Fragment key={num}>
-          <Text position={[num, -0.3, 0]} color="white" fontSize={0.2}>
+          <Text position={[num, -0.3, 0]} color="white" fontSize={0.5}>
             {num}
           </Text>
-          <Text position={[-0.3, num, 0]} color="white" fontSize={0.2}>
+          <Text position={[-0.3, num, 0]} color="white" fontSize={0.5}>
             {num}
           </Text>
-          <Text position={[0, -0.3, num]} color="white" fontSize={0.2}>
+          <Text position={[0, -0.3, num]} color="white" fontSize={0.5}>
             {num}
           </Text>
         </React.Fragment>
