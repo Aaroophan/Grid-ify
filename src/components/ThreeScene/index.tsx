@@ -15,7 +15,7 @@ const CameraSetup: React.FC = () => {
 
   useEffect(() => {
     if (!initialized.current) {
-      camera.position.set(10, 10, 10);
+      camera.position.set(15, 15, 15);
       initialized.current = true;
     }
   }, [camera]);

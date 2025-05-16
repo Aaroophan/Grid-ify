@@ -46,7 +46,7 @@ const AxisHelper: React.FC = () => {
         ])]} />
         <lineBasicMaterial attach="material" color="red" linewidth={2} />
       </line>
-      <Text position={[5.8, 0, 0]} color="red" fontSize={0.3}>{axisLabels.x}</Text>
+      {/* <Text position={[100, 0, 0]} color="red" fontSize={0.3}>{axisLabels.x}</Text> */}
 
       <line>
         <bufferGeometry attach="geometry" args={[new THREE.BufferGeometry().setFromPoints([
@@ -55,7 +55,7 @@ const AxisHelper: React.FC = () => {
         ])]} />
         <lineBasicMaterial attach="material" color="green" linewidth={2} />
       </line>
-      <Text position={[0, 5.8, 0]} color="green" fontSize={0.3}>{axisLabels.y}</Text>
+      {/* <Text position={[0, 5.8, 0]} color="green" fontSize={0.3}>{axisLabels.y}</Text> */}
 
       <line>
         <bufferGeometry attach="geometry" args={[new THREE.BufferGeometry().setFromPoints([
@@ -64,17 +64,17 @@ const AxisHelper: React.FC = () => {
         ])]} />
         <lineBasicMaterial attach="material" color="blue" linewidth={2} />
       </line>
-      <Text position={[0, 0, 5.8]} color="blue" fontSize={0.3}>{axisLabels.z}</Text>
+      {/* <Text position={[0, 0, 5.8]} color="blue" fontSize={0.3}>{axisLabels.z}</Text> */}
 
       {numbers.map((num) => (
         <React.Fragment key={num}>
-          <Text position={[num, -0.3, 0]} color="white" fontSize={0.5}>
+          <Text position={[num, -0.3, 0]} color="#4e598a" fontSize={0.5}>
             {num}
           </Text>
-          <Text position={[-0.3, num, 0]} color="white" fontSize={0.5}>
+          <Text position={[-0.3, num, 0]} color="#4e598a" fontSize={0.5}>
             {num}
           </Text>
-          <Text position={[0, -0.3, num]} color="white" fontSize={0.5}>
+          <Text position={[0, -0.3, num]} color="#4e598a" fontSize={0.5}>
             {num}
           </Text>
         </React.Fragment>
