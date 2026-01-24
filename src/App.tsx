@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Activity, Instagram, Linkedin, Github, Store } from 'lucide-react';
 import DataTable from './components/DataTable';

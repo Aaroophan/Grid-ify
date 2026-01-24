@@ -1,6 +1,5 @@
 # Grid-ify - Interactive Data Visualization
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![React](https://img.shields.io/badge/react-18.x-61DAFB.svg?logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/vite-5.x-646CFF.svg?logo=vite&logoColor=white)
 ![Three.js](https://img.shields.io/badge/three.js-r160-black.svg?logo=three.js&logoColor=white)
@@ -207,10 +206,6 @@ Contributions are welcome! If you have suggestions for improvements or want to r
 3.  **Commit** your changes (`git commit -m 'Add some AmazingFeature'`).
 4.  **Push** to the branch (`git push origin feature/AmazingFeature`).
 5.  **Open a Pull Request**.
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
 
 ---
 
